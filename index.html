@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Quote App</title>
-        <link rel="stylesheet" href=""style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body> 
+    <body>
         <h1> Quote of the day</h1>
-        <p> "Start before you're ready"</p>
-        <p> Setevn</p>
-        <button> New Quote</button>
+
+        <main class="card" id="card">
+            <img class="quote-image" id="quote-image"
+                 src="images/sunrise.svg"
+                 alt="A sun rising over the horizon">
+            <div class="quote-body">
+                <blockquote class="quote-text" id="quote-text">Start before you're ready.</blockquote>
+            </div>
+            <p class="quote-author" id="quote-author">Steven Pressfield</p>
+        </main>
+
+        <div class="actions">
+            <button type="button" id="new-quote"> New Quote</button>
+            <button type="button" id="copy-quote" class="secondary">Copy quote</button>
+        </div>
+
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+
+        <script src="app.js"></script>
     </body>
 </html>
